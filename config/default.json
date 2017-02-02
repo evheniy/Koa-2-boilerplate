@@ -8,7 +8,7 @@
   },
   "ttl": 86400000,
   "log": {
-    "filename": "/var/log/proxyapi.error.log",
+    "filename": "/var/log/koa.error.log",
     "json": true,
     "timestamp": true,
     "logstash": true,
