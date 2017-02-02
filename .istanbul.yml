@@ -1,0 +1,4 @@
+instrumentation:
+  default-excludes: true
+  excludes: ['public/**']
+  include-all-sources: true
