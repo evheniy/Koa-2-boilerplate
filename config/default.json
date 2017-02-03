@@ -8,7 +8,7 @@
   },
   "ttl": 86400000,
   "log": {
-    "filename": "/var/log/app.error.log",
+    "filename": "./logs/app.error.log",
     "json": true,
     "timestamp": true,
     "logstash": true,

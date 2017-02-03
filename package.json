@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node --harmony ./bin/www",
     "test": "npm run security && npm run clear && npm run lint && npm run coverage",
-    "lint": "./node_modules/.bin/eslint app logger tests",
+    "lint": "./node_modules/.bin/eslint app logger tests bin",
     "coverage": "node --harmony ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- tests --recursive",
     "clear": "./node_modules/.bin/rimraf coverage",
     "security": "./node_modules/.bin/nsp check"

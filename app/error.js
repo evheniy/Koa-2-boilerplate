@@ -1,16 +1,17 @@
 const debug = require('debug')('app:error');
 const httpStatus = require('http-status-codes');
-const logger = require('./../logger');
+const logger = require('./logger');
 
 module.exports = () => async (ctx, next) => {
     try {
         await next();
         debug(ctx);
         if (ctx.response.status === httpStatus.NOT_FOUND) {
-            ctx.throw(httpStatus.getStatusText(httpStatus.NOT_FOUND));
+            ctx.throw(httpStatus.NOT_FOUND);
         }
     } catch (err) {
         debug(JSON.stringify(err));
+        logger.error(`Url: ${ctx.request.url}`);
         logger.error(err);
         ctx.status = err.statusCode || err.status || httpStatus.INTERNAL_SERVER_ERROR;
         ctx.body = {
