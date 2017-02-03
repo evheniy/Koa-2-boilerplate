@@ -1,6 +1,8 @@
 Koa.js 2 boilerplate
 ====================
 
+[![Build Status](https://travis-ci.org/evheniy/koa-2-boilerplate.svg?branch=master)](https://travis-ci.org/evheniy/koa-2-boilerplate)
+
 Description
 -----------
 
