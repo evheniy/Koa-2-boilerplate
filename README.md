@@ -23,7 +23,7 @@ And redis is the main storage.
 * [kcors](https://github.com/koajs/cors/tree/v2.x)
 * [koa-router](https://github.com/alexmingoia/koa-router/tree/master/)
 * [koa-static](https://github.com/koajs/static/tree/next)
-* [http-status-codes](https://www.npmjs.com/package/http-status-codes)
+* [koa-2-error-handler](https://github.com/evheniy/koa-2-error-handler)
 * [isomorphic-fetch](https://www.npmjs.com/package/isomorphic-fetch)
 
 ### Testing:
