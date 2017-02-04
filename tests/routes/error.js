@@ -1,10 +1,20 @@
+const sinon = require('sinon');
 const chai = require('chai');
 const chaiHttp = require('chai-http');
 const expect = chai.expect;
-const app = require('./../app');
+const app = require('../app');
 chai.use(chaiHttp);
+const logger = require('../../app/logger');
 
 describe('Error test', () => {
+
+    beforeEach(async () => {
+        return sinon.stub(logger, 'error', text => text);
+    });
+
+    afterEach(async () => {
+        return logger.error.restore();
+    });
 
     it('it should test 404 error', async () => {
         return chai.request(app)
