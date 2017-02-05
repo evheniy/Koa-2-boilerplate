@@ -9,7 +9,7 @@ const cors = require('kcors');
 const helmet = require('koa-helmet');
 const app = module.exports = new Koa();
 const error = require('./error');
-const redis = require('./redis');
+const redis = require('koa-2-ioredis');
 const router = require('./router');
 const compress = require('./compress');
 

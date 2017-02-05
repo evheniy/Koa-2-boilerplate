@@ -4,4 +4,4 @@ services:
 node_js:
   - 7
 script:
-  - npm test
+  - npm test && npm run report-coverage

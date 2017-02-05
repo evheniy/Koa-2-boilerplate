@@ -20,6 +20,6 @@ const server = http.createServer(app.callback());
 server.listen(errorHandler.helper(process.env.PORT || '3000'));
 
 /**
- * Handling  error
+ * Handling  listening and error events
  */
 errorHandler.server(server, logger.info, logger.error);
